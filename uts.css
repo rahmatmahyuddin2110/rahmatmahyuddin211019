@@ -1,0 +1,118 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('foto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f0e9e9;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background-image: url('foto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(15, 14, 14, 0.85);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 350px;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+/* Header */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Biodata */
+.biodata {
+    background-image: url('foto.jpg'); /* Ganti dengan gambar latar yang diinginkan */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.biodata h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.biodata p {
+    font-size: 16px;
+    color: #ddd; /* Menyesuaikan warna teks agar lebih terang */
+    margin: 5px 0;
+}
+
+/* Foto Profil */
+.biodata img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.biodata img:hover {
+    transform: scale(1.1);
+}
+
+/* Animasi untuk container */
+.container {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Efek Fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling untuk tombol atau link (Opsional) */
+button, a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #45a049;
+}
